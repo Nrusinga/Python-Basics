@@ -1,0 +1,19 @@
+def isArmStrong(x):
+    temp=x
+    length = len(str(x))
+    sum1 = 0
+    while(x!=0):
+        y=x%10
+        sum1 = sum1 + y**length 
+        x=x//10
+
+    if(sum1==temp):
+        print(temp,"is an armstrong number")
+    else:
+        print(temp," is not an armstrong number")
+
+
+
+
+x= int(input("Enter the number:"))
+isArmStrong(x)
